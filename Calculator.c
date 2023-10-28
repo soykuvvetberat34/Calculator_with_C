@@ -2,32 +2,32 @@
 
 int main(){
     char opt;
-    int val1,val2,result=0;
+    float val1,val2,result=0;
 
     printf("-----CALCULATOR----- \n");
     printf("enter operator(+,-,*,/):");
     scanf("%c",&opt);
     printf("enter first value:");
-    scanf("%d",&val1);
+    scanf("%f",&val1);
     printf("enter second value:");
-    scanf("%d",&val2);
+    scanf("%f",&val2);
 
     switch(opt){
     case '+':
         result=val1+val2;
-        printf("result:%d",result);
+        printf("result:%f",result);
         break;
     case '-':
         result=val1-val2;
-        printf("result:%d",result);
+        printf("result:%f",result);
         break;
     case '*':
         result=val1*val2;
-        printf("result:%d",result);
+        printf("result:%f",result);
         break;
     case '/':
         result=val1/val2;
-        printf("result:%d",result);
+        printf("result:%.3f",result);
         break;
     default:
         printf("operator not defined!");
